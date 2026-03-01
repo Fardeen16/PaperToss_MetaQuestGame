@@ -1,0 +1,32 @@
+# Unity / VS / build artifacts
+/[Ll]ibrary/
+/[Tt]emp/
+/[Bb]uild/
+/[Bb]uilds/
+/obj/
+/.vscode/
+/*.apk
+*.unitypackage
+*.userprefs
+*.suo
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.orig
+# Packages
+/Packages/packages-lock.json
+# Visual Studio
+.vscode/
+*.csproj
+*.sln
+
+.utmp/
+Library/
+Temp/
+Build/
+Builds/
+obj/
+*.apk
