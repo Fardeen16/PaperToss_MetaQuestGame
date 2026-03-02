@@ -227,6 +227,12 @@ public class PlacementManager : MonoBehaviour
     GameObject placedBin;
     GameObject placedFan;
 
+    // add these fields near the top of the class if you don't already have them:
+    public OVRInput.Controller placementController = OVRInput.Controller.RTouch; // controller that controls placement
+    public OVRInput.Button placementToggleButton = OVRInput.Button.PrimaryHandTrigger; // secondary trigger (grip) by default
+    [HideInInspector] public bool placementEnabled = true; // current placement state
+
+
     void Start()
     {
         if (cameraTransform == null && Camera.main != null) cameraTransform = Camera.main.transform;
@@ -248,24 +254,54 @@ public class PlacementManager : MonoBehaviour
 
     void Update()
     {
-        if (previewInstance == null || rightHandAnchor == null) return;
+        // if (previewInstance == null || rightHandAnchor == null) return;
 
-        // update preview position each frame
-        UpdatePreview();
+        // // update preview position each frame
+        // UpdatePreview();
 
-        // place on right-hand index trigger down (RTouch)
-        if (canPlace && OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
-        {
-            if (logDebug) Debug.Log("[PlacementManager] Trigger pressed -> TryPlaceAtPreview()");
-            TryPlaceAtPreview();
-        }
+        // // place on right-hand index trigger down (RTouch)
+        // if (canPlace && OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+        // {
+        //     if (logDebug) Debug.Log("[PlacementManager] Trigger pressed -> TryPlaceAtPreview()");
+        //     TryPlaceAtPreview();
+        // }
 
-        // optional quick mode switch with Button.Two on right controller
-        if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.RTouch))
-        {
-            currentMode = (currentMode == Mode.PlaceBin) ? Mode.PlaceFan : Mode.PlaceBin;
-            if (logDebug) Debug.Log("[PlacementManager] Mode switched -> " + currentMode);
-        }
+        // // optional quick mode switch with Button.Two on right controller
+        // if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.RTouch))
+        // {
+        //     currentMode = (currentMode == Mode.PlaceBin) ? Mode.PlaceFan : Mode.PlaceBin;
+        //     if (logDebug) Debug.Log("[PlacementManager] Mode switched -> " + currentMode);
+        // }
+
+    if (previewInstance == null) return;
+
+    // Toggle placement mode on secondary trigger press (grip)
+    if (OVRInput.GetDown(placementToggleButton, placementController))
+    {
+        placementEnabled = !placementEnabled;
+        if (previewInstance != null) previewInstance.SetActive(placementEnabled);
+        Debug.Log("[PlacementManager] placementEnabled = " + placementEnabled);
+    }
+
+    // If placement is disabled, do not update preview or place
+    if (!placementEnabled)
+    {
+        // optional: early return so we don't respond to index trigger for placement
+        return;
+    }
+
+    // --- existing placement input (index trigger only) ---
+    if (canPlace && OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, placementController))
+    {
+        TryPlaceAtPreview();
+    }
+
+    // optional debug mode switching
+    if (OVRInput.GetDown(OVRInput.Button.Two, placementController))
+    {
+        currentMode = currentMode == Mode.PlaceBin ? Mode.PlaceFan : Mode.PlaceBin;
+        Debug.Log("Placement mode = " + currentMode);
+    }
     }
 
     // --- Replace the existing UpdatePreview() with this ---
