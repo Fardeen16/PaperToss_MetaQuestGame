@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-farde" at "2026-03-02T03:49:00.1897445Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-farde" at "2026-03-03T02:46:04.6860301Z"
 Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32475 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-03-02T03:49:00Z
+Date: 2026-03-03T02:46:04Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/farde/VR_PaperToss/VR_PaperToss_2/PaperToss_MetaQuestGame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52665
+55359
 -licensingIpc
 LicenseClient-farde
 -job-worker-count
@@ -67,14 +67,14 @@ C:/Users/farde/VR_PaperToss/VR_PaperToss_2/PaperToss_MetaQuestGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [46440]  Target information:
+Player connection [46272]  Target information:
 
-Player connection [46440]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3539601781 [EditorId] 3539601781 [Version] 1048832 [Id] WindowsEditor(7,LEGION16) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [46272]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1849158074 [EditorId] 1849158074 [Version] 1048832 [Id] WindowsEditor(7,LEGION16) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [46440]  * "[IP] 192.168.1.238 [Port] 0 [Flags] 2 [Guid] 3539601781 [EditorId] 3539601781 [Version] 1048832 [Id] WindowsEditor(7,LEGION16) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [46272]  * "[IP] 192.168.1.238 [Port] 0 [Flags] 2 [Guid] 1849158074 [EditorId] 1849158074 [Version] 1048832 [Id] WindowsEditor(7,LEGION16) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [46440] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [46440] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [46272] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [46272] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 15
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -86,9 +86,9 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 26.01 ms, found 16 plugins.
+Refreshing native plugins compatible for Editor in 27.43 ms, found 16 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 2 native plugins for Editor in 2.27 ms.
+Preloading 2 native plugins for Editor in 1.96 ms.
 Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/farde/VR_PaperToss/VR_PaperToss_2/PaperToss_MetaQuestGame/Assets
@@ -105,7 +105,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
@@ -115,17 +115,17 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/E
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-farde"
 [Licensing::IpcConnector] LicenseClient-farde channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-farde-6000.3.5" at "2026-03-02T03:49:01.9124035Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-farde-6000.3.5" at "2026-03-03T02:46:06.4886845Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              dc9994572a3044628e97118d54660db7
-  Correlation Id:          31eee9a6155f61db99db7e3e18196c16
-  External correlation Id: 179504995181461351
+  Session Id:              861145382f524d7d8898fff247722120
+  Correlation Id:          33e6e6a001311d3c6adf01b21f0f9b40
+  External correlation Id: 4846944166939879189
   Machine Id:              hoa3CCSHdB1+GCCokx2Jpfw3UNU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-farde-6000.3.5" (connect: 0.00s, validation: 0.00s, handshake: 1.64s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-farde-6000.3.5-notifications" at "2026-03-02T03:49:03.5515373Z"
-[Licensing::Module] Licensing Background thread has ended after 3.36s
-[Licensing::Module] Licensing is initialized (took 2.46s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-farde-6000.3.5" (connect: 0.00s, validation: 0.00s, handshake: 1.70s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-farde-6000.3.5-notifications" at "2026-03-03T02:46:08.1934498Z"
+[Licensing::Module] Licensing Background thread has ended after 3.51s
+[Licensing::Module] Licensing is initialized (took 2.50s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 1375837047899-UnityPersXXXX
@@ -133,42 +133,42 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/E
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 2.463742 seconds.
-- Loaded All Assemblies, in  2.820 seconds
+Registered in 2.504462 seconds.
+- Loaded All Assemblies, in  2.859 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 278 ms
+Android Extension - Scanning For ADB Devices 306 ms
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.663 seconds
-Domain Reload Profiling: 3481ms
-	BeginReloadAssembly (119ms)
+- Finished resetting the current domain, in  0.705 seconds
+Domain Reload Profiling: 3562ms
+	BeginReloadAssembly (118ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (2503ms)
-	LoadAllAssembliesAndSetupDomain (151ms)
-		LoadAssemblies (117ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (2547ms)
+	LoadAllAssembliesAndSetupDomain (142ms)
+		LoadAssemblies (116ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (148ms)
-			TypeCache.Refresh (147ms)
-				TypeCache.ScanAssembly (135ms)
+		AnalyzeDomain (139ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (127ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (664ms)
+	FinalizeReload (705ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (619ms)
+		SetupLoadedEditorAssemblies (657ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (364ms)
+			InitializePlatformSupportModulesInManaged (396ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (70ms)
-			ProcessInitializeOnLoadAttributes (121ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (127ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -179,16 +179,16 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.857 seconds
+- Loaded All Assemblies, in  0.994 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 11.23 ms, found 16 plugins.
+Refreshing native plugins compatible for Editor in 14.47 ms, found 16 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 11.01 ms, found 16 plugins.
+Refreshing native plugins compatible for Editor in 13.18 ms, found 16 plugins.
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -207,690 +207,382 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.989 seconds
-Domain Reload Profiling: 1838ms
-	BeginReloadAssembly (148ms)
+- Finished resetting the current domain, in  1.147 seconds
+Domain Reload Profiling: 2132ms
+	BeginReloadAssembly (168ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (24ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (627ms)
-		LoadAssemblies (371ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (735ms)
+		LoadAssemblies (426ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (339ms)
-			TypeCache.Refresh (214ms)
-				TypeCache.ScanAssembly (195ms)
-			BuildScriptInfoCaches (101ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (989ms)
+		AnalyzeDomain (398ms)
+			TypeCache.Refresh (250ms)
+				TypeCache.ScanAssembly (228ms)
+			BuildScriptInfoCaches (120ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1147ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (792ms)
+		SetupLoadedEditorAssemblies (918ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (162ms)
-			ProcessInitializeOnLoadAttributes (483ms)
-			ProcessInitializeOnLoadMethodAttributes (127ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (550ms)
+			ProcessInitializeOnLoadMethodAttributes (145ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 23.22 ms, found 16 plugins.
-Preloading 2 native plugins for Editor in 0.24 ms.
+Refreshing native plugins compatible for Editor in 31.46 ms, found 16 plugins.
+Preloading 2 native plugins for Editor in 0.39 ms.
 Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9981 unused Assets / (5.8 MB). Loaded Objects now: 10889.
-Memory consumption went from 197.9 MB to 192.0 MB.
-Total: 19.098700 ms (FindLiveObjects: 1.167400 ms CreateObjectMapping: 1.066300 ms MarkObjects: 13.063700 ms  DeleteObjects: 3.799900 ms)
+Unloading 9981 unused Assets / (6.1 MB). Loaded Objects now: 10889.
+Memory consumption went from 195.7 MB to 189.6 MB.
+Total: 23.256400 ms (FindLiveObjects: 1.008200 ms CreateObjectMapping: 1.595600 ms MarkObjects: 16.196100 ms  DeleteObjects: 4.454500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 59455.076784 seconds.
-  path: Assets/Placer.cs
-  artifactKey: Guid(ffee46d4cccd25543a000ed928eca8b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Placer.cs using Guid(ffee46d4cccd25543a000ed928eca8b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4631924fbca1d2ff25bfc6fe1d1600a2') in 0.0972664 seconds
+  Time since last request: 142083.265539 seconds.
+  path: Assets/BallSpawner.cs
+  artifactKey: Guid(f035eeed5e8d6ec4484014e1f8e38dc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/BallSpawner.cs using Guid(f035eeed5e8d6ec4484014e1f8e38dc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3defb598082696328065d8e29426717b') in 0.1596669 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '10b47a0db6183c75e35076a84de8734d') in 0.0142904 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/InteractionManager.cs
+  artifactKey: Guid(73d1462f477fd03479b24da6ba4d8e96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/InteractionManager.cs using Guid(73d1462f477fd03479b24da6ba4d8e96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7bac06794200ea56aeb7457f6d6115a6') in 0.0121028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/OVROverlayCanvasSettings.asset
+  artifactKey: Guid(ef607638b76b8f3479dfd680624b0bcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Resources/OVROverlayCanvasSettings.asset using Guid(ef607638b76b8f3479dfd680624b0bcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '846f03607696ac60cdc3692ddabaac84') in 0.0427342 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Import Request.
-  Time since last request: 554.212886 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/BackgroundMesh.fbx
-  artifactKey: Guid(b9ae429aca254fa41966db24b9e53232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/BackgroundMesh.fbx using Guid(b9ae429aca254fa41966db24b9e53232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e303805e22c2dd40d822590eb40dc0f1') in 0.7437197 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/InteractableItems/Prefabs/[BB] Pokeable Plane.prefab
-  artifactKey: Guid(7aec9913f7f564a05883130bcdaf2347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/InteractableItems/Prefabs/[BB] Pokeable Plane.prefab using Guid(7aec9913f7f564a05883130bcdaf2347) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fd60cc24a73ebe70a6286a1a72f3812') in 0.0644121 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicGesturesSwipeAudio.prefab
-  artifactKey: Guid(87f21855284871e4aa142d376bd8f2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicGesturesSwipeAudio.prefab using Guid(87f21855284871e4aa142d376bd8f2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25d00357dbc6a9bc1448372ad6615b0b') in 0.0226473 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/MetaQuestTouchPro_Left.fbx
-  artifactKey: Guid(2b9768cc0be08784b91b7da60696ba29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/MetaQuestTouchPro_Left.fbx using Guid(2b9768cc0be08784b91b7da60696ba29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3848dfa5a76e01d9e171ff1639a03c05') in 2.2894683 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 58
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/PingPong/PingPngBall.fbx
-  artifactKey: Guid(da3852b49eaeced4aba4d29c5814159c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/PingPong/PingPngBall.fbx using Guid(da3852b49eaeced4aba4d29c5814159c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd85cab3be5dbb6dd1de02fd262d3c31a') in 0.0653915 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/CoffeeCup/CoffeeCup.fbx
-  artifactKey: Guid(18689f733cbf0774ab1dd44b2bd0043d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/CoffeeCup/CoffeeCup.fbx using Guid(18689f733cbf0774ab1dd44b2bd0043d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54cedba39a31b704e1bf184dff5b9ee9') in 0.07773 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForQuest2/Materials/OculusTouchForQuest2_MAT.fbx
-  artifactKey: Guid(ad2069ba7fe0238489d3531897cea8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForQuest2/Materials/OculusTouchForQuest2_MAT.fbx using Guid(ad2069ba7fe0238489d3531897cea8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0534bc49a7ae6f83465d4c318c7f834') in 0.0441196 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Debug/ActiveStateDebugTreeNodeHorizontal.prefab
-  artifactKey: Guid(bcb4af79d88c4af4a90fb6e19de13e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Debug/ActiveStateDebugTreeNodeHorizontal.prefab using Guid(bcb4af79d88c4af4a90fb6e19de13e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54af5b6344de5cd16f7732bcf803f622') in 0.0276733 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/Bedroom/Bedroom03.prefab
-  artifactKey: Guid(989283c9dcb36a24aac11a601001dce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/Bedroom/Bedroom03.prefab using Guid(989283c9dcb36a24aac11a601001dce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c5d0024d0a71f06da2723014cc82435') in 2.051999 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIEnumHistory.prefab
-  artifactKey: Guid(b2da6b27df236b144b3516ed8e7d36ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIEnumHistory.prefab using Guid(b2da6b27df236b144b3516ed8e7d36ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05a1caef45ce936f7a0db455afc642fd') in 0.0146315 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/UISet/Prefabs/Patterns/ContentUIExample-HorizonOS2.prefab
-  artifactKey: Guid(fa9876f68ddbbbc43b70862cfec4cfe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/UISet/Prefabs/Patterns/ContentUIExample-HorizonOS2.prefab using Guid(fa9876f68ddbbbc43b70862cfec4cfe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d813b163a09d14847265f9858ba9f5d') in 0.1131595 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1211
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIFloatField.prefab
-  artifactKey: Guid(d8c744701b43c864b88e7f8144e19bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIFloatField.prefab using Guid(d8c744701b43c864b88e7f8144e19bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ee6ee6f8f033c950fb1d8ae2933c930') in 0.0058025 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Locomotion/ControllerSlide.prefab
-  artifactKey: Guid(0f3f0c07b960cef488be68224407c83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Locomotion/ControllerSlide.prefab using Guid(0f3f0c07b960cef488be68224407c83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d4d47afdc62e2572a0a49b4acc1810d') in 0.0033607 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Packages/com.meta.xr.sdk.interaction.ovr/Runtime/Sample/Objects/Props/CurvedUnityCanvas.prefab
-  artifactKey: Guid(d6733f35cecdc984c9d50925eb25939e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction.ovr/Runtime/Sample/Objects/Props/CurvedUnityCanvas.prefab using Guid(d6733f35cecdc984c9d50925eb25939e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e394594eaf5ee7bd5d6b3e2a83a29181') in 0.0408239 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 825
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.meta.xr.sdk.voice/Lib/Wit.ai/Prefabs/AudioPlayer Lipsync.prefab
-  artifactKey: Guid(670d931df51614d4bae26933e87ad694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.voice/Lib/Wit.ai/Prefabs/AudioPlayer Lipsync.prefab using Guid(670d931df51614d4bae26933e87ad694) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07dba9954c20836c07700a3193aba410') in 0.0031248 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx
-  artifactKey: Guid(dca3d72ce32048e409eaaf754210cfe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx using Guid(dca3d72ce32048e409eaaf754210cfe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4dbba9a0d7153d626827d2948ff6440c') in 0.0400056 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/MultiplayerBlocks/PhotonFusion/AutoMatchmaking/Prefabs/AutoMatchmakingFusion.prefab
-  artifactKey: Guid(ba1bb1b05204b024787843fb15faa209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/MultiplayerBlocks/PhotonFusion/AutoMatchmaking/Prefabs/AutoMatchmakingFusion.prefab using Guid(ba1bb1b05204b024787843fb15faa209) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a581dfab47327676ec5eaecab21aea8') in 0.0026212 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Materials/CubeMaterialGreen.fbx
-  artifactKey: Guid(b8eb22bbef4e12041945f044aeab9469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Materials/CubeMaterialGreen.fbx using Guid(b8eb22bbef4e12041945f044aeab9469) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77c04cb4a280c18f3ba72dd361b85c77') in 0.0369265 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/Cube/Prefabs/[BB] Cube.prefab
-  artifactKey: Guid(845877e307255424b85c741e6e94e919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/Cube/Prefabs/[BB] Cube.prefab using Guid(845877e307255424b85c741e6e94e919) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6901c8a2f2af03c88e3fe09744f92a43') in 0.0618156 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIObject.prefab
-  artifactKey: Guid(a87cfaef648f17c41b568e842e068c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIObject.prefab using Guid(a87cfaef648f17c41b568e842e068c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14c1d7937bdc666e832c2da18bb7e939') in 0.0043413 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/MRDesk/Models/MRDeskShadow.fbx
-  artifactKey: Guid(7e589f294e82af44da827505993fac92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/MRDesk/Models/MRDeskShadow.fbx using Guid(7e589f294e82af44da827505993fac92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46a6194895fb49e96ed329978ce080b8') in 0.0302142 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Locomotion/Materials/MetaLocoTutorialUIMat.fbx
-  artifactKey: Guid(7cee51529ca3046bd8a94b96d93191ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Locomotion/Materials/MetaLocoTutorialUIMat.fbx using Guid(7cee51529ca3046bd8a94b96d93191ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e20182d86abf74a7ae5eacbca2d227a7') in 0.0722989 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Packages/com.meta.xr.sdk.core/Meshes/Cone.obj
-  artifactKey: Guid(c28fa8d61f81fb742b1180a6d4516625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Meshes/Cone.obj using Guid(c28fa8d61f81fb742b1180a6d4516625) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9e802221fb2c6d35c500cc0f2f9860b') in 0.0301329 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/Bedroom/Bedroom00.prefab
-  artifactKey: Guid(4b454e8ccd6764ccdbcd91586969863f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/Bedroom/Bedroom00.prefab using Guid(4b454e8ccd6764ccdbcd91586969863f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c232080f9c82d25240401c75e8a1c663') in 0.0590955 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 80
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/AIBlocks/OVRInternal/ImageSegmentation/3DBoundingBox.prefab
-  artifactKey: Guid(5d88dedd78970fe46af7035d87d2706d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/AIBlocks/OVRInternal/ImageSegmentation/3DBoundingBox.prefab using Guid(5d88dedd78970fe46af7035d87d2706d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'debd9a089054e65f066a71f7a03a3651') in 2.0927792 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Locomotion/Models/Meta_LocomotionStools.fbx
-  artifactKey: Guid(9d80c128b158cd74b9b9a3e36dae77c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Locomotion/Models/Meta_LocomotionStools.fbx using Guid(9d80c128b158cd74b9b9a3e36dae77c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1de49ba2627f698ad2b1b81960cfc8fe') in 0.0893907 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BodyCaptureTimerTick.prefab
-  artifactKey: Guid(b925b5b4ed2d8bb438d0a5ff67765183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BodyCaptureTimerTick.prefab using Guid(b925b5b4ed2d8bb438d0a5ff67765183) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5933bc12ead6d295e11d0f9c6f37bd15') in 0.0211717 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Body/Body.prefab
-  artifactKey: Guid(70fbb28682c6d554a8a8e495be5a36a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Body/Body.prefab using Guid(70fbb28682c6d554a8a8e495be5a36a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f650395c228b1469332f1fbad767436a') in 0.0032873 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Tests/Meshes/bevelcube.fbx
-  artifactKey: Guid(c1e06f36f6a71234ab15a7826c4871d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Tests/Meshes/bevelcube.fbx using Guid(c1e06f36f6a71234ab15a7826c4871d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dce92c0bcbd463b8bcec6d55c5b5fc69') in 0.0255125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/MapWithPins/Models/MapPointer.fbx
-  artifactKey: Guid(d965108dd6326c74ab84da39a3c86b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/MapWithPins/Models/MapPointer.fbx using Guid(d965108dd6326c74ab84da39a3c86b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36060b5207a0d0ac5763ce7f4b751e4e') in 0.0455756 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/LargeScale/Basement.prefab
-  artifactKey: Guid(1e89293ca5c265c408383952b2cfdf62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/LargeScale/Basement.prefab using Guid(1e89293ca5c265c408383952b2cfdf62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b64025f5a8de2edcab710b5c8ccca92') in 0.0449699 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 294
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/BaseInteractors.prefab
-  artifactKey: Guid(5acb2e77a0806b447b84837d86cd984c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/BaseInteractors.prefab using Guid(5acb2e77a0806b447b84837d86cd984c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4182ee8f1b87484cd0e665b3e92f1dfb') in 0.4077797 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicGrabReleaseAudio.prefab
-  artifactKey: Guid(4c10bc37c0e8b774387330f749138159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicGrabReleaseAudio.prefab using Guid(4c10bc37c0e8b774387330f749138159) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c95d84cc102184bfdc308c08c6399f7f') in 0.0058722 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Box/Box.prefab
-  artifactKey: Guid(be890165f0b028b4c959cf9729b55f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Box/Box.prefab using Guid(be890165f0b028b4c959cf9729b55f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5bef8b34c5507a74e53687e4b6aeb5f') in 3.4861091 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 117
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicPokeKeypadReleaseAudio.prefab
-  artifactKey: Guid(f9e7872b9c21d4244801c3d1d508ffcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicPokeKeypadReleaseAudio.prefab using Guid(f9e7872b9c21d4244801c3d1d508ffcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58edcc46dad1e59e79977fc2cdeae962') in 0.0038307 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/HandGrab/ControllerHandGrabInteractor.prefab
-  artifactKey: Guid(4b2cb30a9113d0b458002883f6bcb439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/HandGrab/ControllerHandGrabInteractor.prefab using Guid(4b2cb30a9113d0b458002883f6bcb439) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f809d1b907b73d0beeea2850844a398c') in 0.0052554 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 90
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicRayBackAudio.prefab
-  artifactKey: Guid(1d7be4acb4bd00648841123ed349dc57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicRayBackAudio.prefab using Guid(1d7be4acb4bd00648841123ed349dc57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e86a8b24ff3e206496c0c69137ac88a6') in 0.0240857 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Grab/ControllerGrabInteractor.prefab
-  artifactKey: Guid(bc242319e5f2bd842999ab7665ad2d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Grab/ControllerGrabInteractor.prefab using Guid(bc242319e5f2bd842999ab7665ad2d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e8bf21992ff055d4f81b995c2b52c02') in 0.0030392 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Locomotion/Models/Meta_LocomotionDoors.fbx
-  artifactKey: Guid(035c68618a658394b98bd17260fa39f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Locomotion/Models/Meta_LocomotionDoors.fbx using Guid(035c68618a658394b98bd17260fa39f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a18dc6b9e0752e946b9fbc61613d0ef5') in 0.1539981 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 52
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/Bedroom/Bedroom07.prefab
-  artifactKey: Guid(fec8dc4a2237b4b41b1a0a6325c7f24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Rooms/Prefabs/Bedroom/Bedroom07.prefab using Guid(fec8dc4a2237b4b41b1a0a6325c7f24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b510efa315351102cdf81bb97d12af8') in 0.0259083 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 82
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/UISet/Prefabs/Button/UnityUIToggleBased/BorderlessButton_IconAndLabel.prefab
-  artifactKey: Guid(c8e2992a313c49d449f074c59c12f6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/UISet/Prefabs/Button/UnityUIToggleBased/BorderlessButton_IconAndLabel.prefab using Guid(c8e2992a313c49d449f074c59c12f6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe87ac89ac2fb45d5277b13a07b0fd49') in 0.0255522 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 165
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIColor.prefab
-  artifactKey: Guid(77c185820dd1a464eac89cae3abccddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIColor.prefab using Guid(77c185820dd1a464eac89cae3abccddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b11cc7ab196a8b20d4fb6ba9dbd48c2c') in 0.0066063 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 82
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/CoffeeCup/CoffeeCupFractured.fbx
-  artifactKey: Guid(055b4edebb104c34c842d52b42aca235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/CoffeeCup/CoffeeCupFractured.fbx using Guid(055b4edebb104c34c842d52b42aca235) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f4402599cc79c55250323fd16c4061f') in 0.2794728 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 87
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Locomotion/ControllerLocomotionSlideActions.prefab
-  artifactKey: Guid(a69d42da585a6df49a708da3014447a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Locomotion/ControllerLocomotionSlideActions.prefab using Guid(a69d42da585a6df49a708da3014447a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e421ef46942df1bc3e9ab68a7916f039') in 0.0028985 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/Interactors/Prefabs/[BB] Grab Interactor.prefab
-  artifactKey: Guid(cd2af620b985a894881abfc004e150ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/Interactors/Prefabs/[BB] Grab Interactor.prefab using Guid(cd2af620b985a894881abfc004e150ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88aa59528bf700287ed6eabffba04ffb') in 0.0030214 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Cube/Models/CubeMesh.fbx
-  artifactKey: Guid(2d1094ca45d7fbb4bb2fc2ba8b406ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Cube/Models/CubeMesh.fbx using Guid(2d1094ca45d7fbb4bb2fc2ba8b406ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97877a00572a40cad9e6af4aa53dc791') in 0.0334874 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.fbx
-  artifactKey: Guid(6fce4d906dba56f4bb507682dbb5b81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.fbx using Guid(6fce4d906dba56f4bb507682dbb5b81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71a0e9596c168da52710c7126a78bbff') in 0.0739032 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Packages/com.meta.xr.sdk.core/Scripts/BuildingBlocks/MultiplayerBlocks/Shared/NetworkedAvatar/AvatarSDK/Prefabs/Rendering/AVATAR_LOD_DEBUG_CANVAS.prefab
-  artifactKey: Guid(bc69bed182ea859469880da3ad5f2f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Scripts/BuildingBlocks/MultiplayerBlocks/Shared/NetworkedAvatar/AvatarSDK/Prefabs/Rendering/AVATAR_LOD_DEBUG_CANVAS.prefab using Guid(bc69bed182ea859469880da3ad5f2f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44604416a299cbf3a4138b250ab0f724') in 0.003591 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicPokeKeypadPressAudio.prefab
-  artifactKey: Guid(0d5e681c36329dc4e9e700f470026b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/BasicPokeKeypadPressAudio.prefab using Guid(0d5e681c36329dc4e9e700f470026b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3acfaac6f1eb2b15fdb6119acb625c55') in 0.1804838 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Locomotion/Models/Meta_LocomotionRoom.fbx
-  artifactKey: Guid(37813fb9636706d46b13c24b426e109a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Locomotion/Models/Meta_LocomotionRoom.fbx using Guid(37813fb9636706d46b13c24b426e109a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eca0fbdaeb9ec66720526ad34f66cd18') in 0.085895 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/AIBlocks/ObjectDetection/Prefabs/BoundingBoxPrefab.prefab
-  artifactKey: Guid(46d0b28dd34412b4c90c82205d36db4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/AIBlocks/ObjectDetection/Prefabs/BoundingBoxPrefab.prefab using Guid(46d0b28dd34412b4c90c82205d36db4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdd06b54a38419d4fe86e8ebd97d666b') in 0.0420948 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/ComplexGrabPinReleaseAudio.prefab
-  artifactKey: Guid(1dd2ef34e70eb5b4fa2185b3d1481fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/ComplexGrabPinReleaseAudio.prefab using Guid(1dd2ef34e70eb5b4fa2185b3d1481fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '518d87a9a4d27db4d4928540dee38d98') in 0.0073846 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/BigStone/BigStone.prefab
-  artifactKey: Guid(9c2d282813c94144c99c645bfff6bf63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/BigStone/BigStone.prefab using Guid(9c2d282813c94144c99c645bfff6bf63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2b0da4717408199032193cd465e333a') in 2.67432 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 75
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Debug/ActiveStateDebugTreeNodeVertical.prefab
-  artifactKey: Guid(e1bdcfaab96307149a62e5c148b5ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Debug/ActiveStateDebugTreeNodeVertical.prefab using Guid(e1bdcfaab96307149a62e5c148b5ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '530cab0e7fc8a0043bfa774f8e6d8655') in 0.0147042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 46
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/debug_full_body.fbx
-  artifactKey: Guid(c7efe93ace20306458c529399e686c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/debug_full_body.fbx using Guid(c7efe93ace20306458c529399e686c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aade16009a47a4f4cfc2a7643e96392a') in 0.0331336 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 242
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/ComplexGrabDollReleaseAudio.prefab
-  artifactKey: Guid(69b6142adba780140b51bb45796678d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Prefabs/ComplexGrabDollReleaseAudio.prefab using Guid(69b6142adba780140b51bb45796678d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '122f7d39e9f5da4be15f4a346cfc8ba6') in 0.0069031 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/SyntheticHands/Prefabs/[BB] Left Hand Synthetic.prefab
-  artifactKey: Guid(81b0c6f02d961984eb074b9834c049ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/SyntheticHands/Prefabs/[BB] Left Hand Synthetic.prefab using Guid(81b0c6f02d961984eb074b9834c049ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13d3f34ae3fde9da83a211281a2aa982') in 0.0298944 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 460
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Screen/Materials/FrameMaterial.fbx
-  artifactKey: Guid(0149d0c06fc814c9abda2f5a244f6d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Environment/Screen/Materials/FrameMaterial.fbx using Guid(0149d0c06fc814c9abda2f5a244f6d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbcb315d299b2e9a29c9aabb7a0c9c3a') in 0.0306054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/Locomotion/LocomotionPointer.fbx
-  artifactKey: Guid(fc0fd19b38dfb6a4ba0336bf7b518c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/Locomotion/LocomotionPointer.fbx using Guid(fc0fd19b38dfb6a4ba0336bf7b518c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70a58eadea0c2e665af709be1fd97df4') in 0.0385447 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Packages/com.meta.xr.sdk.core/Scripts/BuildingBlocks/MultiplayerBlocks/Shared/NetworkedAvatar/AvatarSDK/Prefabs/AvatarSDK.prefab
-  artifactKey: Guid(643ab75508755d4468bbc11300c9d3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Scripts/BuildingBlocks/MultiplayerBlocks/Shared/NetworkedAvatar/AvatarSDK/Prefabs/AvatarSDK.prefab using Guid(643ab75508755d4468bbc11300c9d3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '585fbbd83839082e22c410760b38a83b') in 0.0042079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/Interactors/Prefabs/[BB] Hand Poke.prefab
-  artifactKey: Guid(62a3c5a0973fc4f48a1039ab80b76232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/Interactors/Prefabs/[BB] Hand Poke.prefab using Guid(62a3c5a0973fc4f48a1039ab80b76232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bd8082537b374a46aff6767050ba26b') in 0.003736 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/BowlCollider.fbx
-  artifactKey: Guid(d1549023b485ff048a7dfe601fff9df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/BowlCollider.fbx using Guid(d1549023b485ff048a7dfe601fff9df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '537ebb64d46f2b05eb5e68b8a7008c09') in 0.0249576 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/UISet/Prefabs/Button/UnityUIToggleBased/ButtonShelf_IconAndLabel_Toggle.prefab
-  artifactKey: Guid(040567cd4431b484e9999e28a102d366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/UISet/Prefabs/Button/UnityUIToggleBased/ButtonShelf_IconAndLabel_Toggle.prefab using Guid(040567cd4431b484e9999e28a102d366) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f80f80b640dafa23099a8aa5c992d72') in 0.0170387 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 46
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Box/Materials/BoxMat.fbx
-  artifactKey: Guid(091196c6d7fd95e4681685ff1f4f9419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Box/Materials/BoxMat.fbx using Guid(091196c6d7fd95e4681685ff1f4f9419) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af332046852d81723873f4009e379d4d') in 0.0391081 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Tools/AnchorPrefabSpawner.prefab
-  artifactKey: Guid(0c23e50f33ad151479c690a0e4a5320e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Tools/AnchorPrefabSpawner.prefab using Guid(0c23e50f33ad151479c690a0e4a5320e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c72a5a5306b0251f9d5ae233762a0086') in 0.0276011 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.230855 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Sounds/GrabObject01.wav
-  artifactKey: Guid(452cab5cd4cc31a4bbda065fe1729e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Sounds/GrabObject01.wav using Guid(452cab5cd4cc31a4bbda065fe1729e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96f9357a053ca510af9eb71887a9c0a3') in 0.0382474 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_Keypad_03.wav
-  artifactKey: Guid(94b72b7e55617a048a8468e9ac572290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_Keypad_03.wav using Guid(94b72b7e55617a048a8468e9ac572290) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a20d54ec25b3ed7a9a92e8fcba8e7cad') in 0.0164611 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_ToyButton_Release_02.wav
-  artifactKey: Guid(9c588f7a6c8d16142bd78690b1f36fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_ToyButton_Release_02.wav using Guid(9c588f7a6c8d16142bd78690b1f36fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34fa0e6a10403ad1a2d5d64b41157219') in 0.0148255 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Object_Impact_07.wav
-  artifactKey: Guid(7c0de7743a99e16458d6b4b9d5bf49a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Object_Impact_07.wav using Guid(7c0de7743a99e16458d6b4b9d5bf49a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e372e8003e1b58bb8c5a947c3c94d47') in 0.0229426 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_PoseDetection_ThumbsDown_03.wav
-  artifactKey: Guid(11f00901e96c8d34687e2b184c356f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_PoseDetection_ThumbsDown_03.wav using Guid(11f00901e96c8d34687e2b184c356f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d979a3fddc28e908faeef80f6cf7e35') in 0.0192558 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicGrab_Release_04.wav
-  artifactKey: Guid(72e37686c6837804ab84e2f347c8e3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicGrab_Release_04.wav using Guid(72e37686c6837804ab84e2f347c8e3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b15fb6e3f71dbb2ec96b3c71eb7cc56c') in 0.0190434 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_PoseDetection_ThumbsUp_03.wav
-  artifactKey: Guid(9b19288dd66a54a4eb7774dd05c2a328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_PoseDetection_ThumbsUp_03.wav using Guid(9b19288dd66a54a4eb7774dd05c2a328) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9671db971fe39c1d6db1a91b5fc71e96') in 0.0089047 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Object_Impact_08.wav
-  artifactKey: Guid(b52bcbc955bfb7b4b866604115d42e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Object_Impact_08.wav using Guid(b52bcbc955bfb7b4b866604115d42e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1284b7e32d10282a464c5b46f346ca4') in 0.0282004 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Locomotion_HotspotHover.wav
-  artifactKey: Guid(a4104b81b59e0254585ab51f18eb979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Locomotion_HotspotHover.wav using Guid(a4104b81b59e0254585ab51f18eb979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7e2fe34bbf05f00edaf9ee61e6080a8') in 0.0240482 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_ToyButton_Release_01.wav
-  artifactKey: Guid(1cb50a7de0f9f954b8b0c331fe898a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_ToyButton_Release_01.wav using Guid(1cb50a7de0f9f954b8b0c331fe898a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8463e1a38b87a6a5b99b30f8433f92f6') in 0.0169641 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Object_Impact_06.wav
-  artifactKey: Guid(08910b7f127a61644811e5cda32f09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_Object_Impact_06.wav using Guid(08910b7f127a61644811e5cda32f09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fec111380898b673bcdb2331ad08c6a') in 0.0239835 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicRay_Press.wav
-  artifactKey: Guid(0ae074243bcbf57468d433ad4f78acbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicRay_Press.wav using Guid(0ae074243bcbf57468d433ad4f78acbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '122681a5ede01775449d82c848767e44') in 0.0152669 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_Keypad_07.wav
-  artifactKey: Guid(ba53110248aaf894aa2310ce615e6eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Audio/Content/Interaction_BasicPoke_Keypad_07.wav using Guid(ba53110248aaf894aa2310ce615e6eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '907cdacdea7cf27eaee013d2ca4f4480') in 0.0161293 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.784 seconds
+Script 'CharacterController' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 11.61 ms, found 16 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 12.92 ms, found 16 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.868 seconds
+Domain Reload Profiling: 1650ms
+	BeginReloadAssembly (189ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (529ms)
+		LoadAssemblies (364ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (204ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (869ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (701ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (155ms)
+			ProcessInitializeOnLoadAttributes (382ms)
+			ProcessInitializeOnLoadMethodAttributes (144ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 36.13 ms, found 16 plugins.
+Preloading 2 native plugins for Editor in 0.30 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9979 unused Assets / (5.4 MB). Loaded Objects now: 10912.
+Memory consumption went from 204.9 MB to 199.5 MB.
+Total: 21.591000 ms (FindLiveObjects: 1.199400 ms CreateObjectMapping: 1.055300 ms MarkObjects: 15.294800 ms  DeleteObjects: 4.039100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'CharacterController' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 28.55 ms, found 16 plugins.
+Preloading 2 native plugins for Editor in 0.28 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9907 unused Assets / (7.5 MB). Loaded Objects now: 10901.
+Memory consumption went from 204.5 MB to 197.0 MB.
+Total: 24.939800 ms (FindLiveObjects: 1.068200 ms CreateObjectMapping: 0.947000 ms MarkObjects: 14.801200 ms  DeleteObjects: 8.121500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.855 seconds
+Script 'CharacterController' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 11.85 ms, found 16 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 13.77 ms, found 16 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.889 seconds
+Domain Reload Profiling: 1738ms
+	BeginReloadAssembly (188ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (569ms)
+		LoadAssemblies (383ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (265ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (227ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (889ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (725ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (167ms)
+			ProcessInitializeOnLoadAttributes (401ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 32.45 ms, found 16 plugins.
+Preloading 2 native plugins for Editor in 0.43 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9980 unused Assets / (6.2 MB). Loaded Objects now: 10921.
+Memory consumption went from 204.7 MB to 198.5 MB.
+Total: 24.450800 ms (FindLiveObjects: 1.154800 ms CreateObjectMapping: 1.017200 ms MarkObjects: 17.402400 ms  DeleteObjects: 4.874200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  3.242 seconds
+Script 'CharacterController' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 15.54 ms, found 16 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 11.29 ms, found 16 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.928 seconds
+Domain Reload Profiling: 4167ms
+	BeginReloadAssembly (441ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (143ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (2619ms)
+		LoadAssemblies (2364ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (590ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (554ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (928ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (746ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (171ms)
+			ProcessInitializeOnLoadAttributes (403ms)
+			ProcessInitializeOnLoadMethodAttributes (150ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 16.91 ms, found 16 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9980 unused Assets / (5.0 MB). Loaded Objects now: 10929.
+Memory consumption went from 204.8 MB to 199.8 MB.
+Total: 11.158900 ms (FindLiveObjects: 0.805400 ms CreateObjectMapping: 0.506600 ms MarkObjects: 7.643700 ms  DeleteObjects: 2.201900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1575.866510 seconds.
+  path: Assets/BallCollisionSfx.cs
+  artifactKey: Guid(952c0998e69466447af113af0407315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BallCollisionSfx.cs using Guid(952c0998e69466447af113af0407315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4da0ec5ca345bed484416cf9996b11aa') in 0.0462692 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.803 seconds
+Script 'CharacterController' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 11.77 ms, found 16 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 14.35 ms, found 16 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.903 seconds
+Domain Reload Profiling: 1703ms
+	BeginReloadAssembly (195ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (541ms)
+		LoadAssemblies (366ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (250ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (216ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (903ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (744ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (160ms)
+			ProcessInitializeOnLoadAttributes (404ms)
+			ProcessInitializeOnLoadMethodAttributes (156ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 32.09 ms, found 16 plugins.
+Preloading 2 native plugins for Editor in 0.28 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9980 unused Assets / (4.9 MB). Loaded Objects now: 10937.
+Memory consumption went from 204.8 MB to 199.9 MB.
+Total: 21.642200 ms (FindLiveObjects: 1.181200 ms CreateObjectMapping: 1.220600 ms MarkObjects: 15.417200 ms  DeleteObjects: 3.821500 ms)
+
+Prepare: number of updated asset objects reloaded= 0

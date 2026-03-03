@@ -2,46 +2,33 @@ using UnityEngine;
 
 public class BallCollisionSfx : MonoBehaviour
 {
-    InteractionManager interactionManager;
+    [Tooltip("Optional: drag your InteractionManager here. If left empty, will try to FindObjectOfType.")]
+    public InteractionManager interactionManager;
 
-    void Awake()
+    [Tooltip("Tag to check for bin collisions. Set your DustBin prefab tag to 'DustBin'.")]
+    public string binTag = "DustBin";
+
+    void Start()
     {
-        // Cache the InteractionManager reference once at startup.
-        // Uses the modern Unity API. If your Unity version doesn't have
-        // FindFirstObjectByType, update Unity or change to FindObjectOfType.
-        interactionManager = UnityEngine.Object.FindFirstObjectByType<InteractionManager>();
-
         if (interactionManager == null)
         {
-            Debug.LogWarning("[BallCollisionSfx] InteractionManager not found in scene at Awake().");
-            // we keep running; OnCollisionEnter will try again if needed.
+            interactionManager = FindObjectOfType<InteractionManager>();
+            // If your Unity version warns about deprecation, this still works. Alternatively assign via Inspector.
         }
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        // Only trigger on collisions with the bin. Use a tag for reliability.
-        // Make sure your bin prefab has Tag = "DustBin" (or change this string).
-        if (!collision.collider.CompareTag("DustBin"))
-            return;
+        if (collision == null) return;
 
-        // determine hit point (use first contact if available)
-        Vector3 hitPoint = (collision.contacts != null && collision.contacts.Length > 0)
-            ? collision.contacts[0].point
-            : transform.position;
-
-        if (interactionManager == null)
+        // If you use a tag on bin
+        if (!string.IsNullOrEmpty(binTag) && collision.collider.CompareTag(binTag))
         {
-            // try to find it once more (in case it was created after Awake)
-            interactionManager = UnityEngine.Object.FindFirstObjectByType<InteractionManager>();
-            if (interactionManager == null)
-            {
-                Debug.LogWarning("[BallCollisionSfx] InteractionManager still not found on collision.");
-                return;
-            }
+            Vector3 hitPoint = collision.contacts.Length > 0 ? collision.contacts[0].point : transform.position;
+            if (interactionManager != null)
+                interactionManager.PlayBinHitSound(hitPoint);
+            else
+                Debug.LogWarning("[BallCollisionSfx] InteractionManager not found to play bin hit sound.");
         }
-
-        // call the InteractionManager to play the bin hit sfx
-        interactionManager.OnBallHitBin(hitPoint);
     }
 }
