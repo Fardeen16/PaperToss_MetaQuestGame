@@ -155,8 +155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallBehavior
   points: 10
-  scoreSfx: {fileID: 8300000, guid: 7f7a0827e6fa2ea43986bb0f70436a6a, type: 3}
+  scoreSfx: {fileID: 8300000, guid: a06ac01647d2fbb49be2b6d2f992bce5, type: 3}
   scoreParticlePrefab: {fileID: 0}
+  minTopNormalY: 0.7
 --- !u!114 &-5024034748392878853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,8 +165,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308455866920227854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 952c0998e69466447af113af0407315a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallCollisionSfx
+  binHitClip: {fileID: 8300000, guid: a06ac01647d2fbb49be2b6d2f992bce5, type: 3}
+  minTopNormalY: 0.7
+  pointsOnTopHit: 10
+  minRelativeSpeed: 0.5

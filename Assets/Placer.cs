@@ -310,236 +310,236 @@ public class Placer : MonoBehaviour
     void Start()
     {
         // create preview instance for the initial type
-        CreatePreviewForType(currentType);
-    }
+        //CreatePreviewForType(currentType);
+    }}
 
-    /// <summary>Switch active placement type and ensure preview visible.</summary>
-    public void SetPlacementType(PlacementType t)
-    {
-        currentType = t;
-        previewActive = true;
-        CreatePreviewForType(t);
-    }
+//     /// <summary>Switch active placement type and ensure preview visible.</summary>
+//     public void SetPlacementType(PlacementType t)
+//     {
+//         currentType = t;
+//         previewActive = true;
+//         CreatePreviewForType(t);
+//     }
 
-    void CreatePreviewForType(PlacementType t)
-    {
-        // destroy old preview if any
-        if (previewInstance != null) Destroy(previewInstance);
+//     void CreatePreviewForType(PlacementType t)
+//     {
+//         // destroy old preview if any
+//         if (previewInstance != null) Destroy(previewInstance);
 
-        GameObject prefab = (t == PlacementType.Bin) ? binPreviewPrefab : fanPreviewPrefab;
-        if (prefab == null)
-        {
-            Debug.LogWarning("[Placer] Preview prefab missing for " + t);
-            previewInstance = null;
-            return;
-        }
+//         GameObject prefab = (t == PlacementType.Bin) ? binPreviewPrefab : fanPreviewPrefab;
+//         if (prefab == null)
+//         {
+//             Debug.LogWarning("[Placer] Preview prefab missing for " + t);
+//             previewInstance = null;
+//             return;
+//         }
 
-        previewInstance = Instantiate(prefab);
-        // remove colliders so preview doesn't block raycasts
-        foreach (var c in previewInstance.GetComponentsInChildren<Collider>())
-            Destroy(c);
+//         previewInstance = Instantiate(prefab);
+//         // remove colliders so preview doesn't block raycasts
+//         foreach (var c in previewInstance.GetComponentsInChildren<Collider>())
+//             Destroy(c);
 
-        // start hidden; UpdatePreview will enable when valid
-        previewInstance.SetActive(false);
-    }
+//         // start hidden; UpdatePreview will enable when valid
+//         previewInstance.SetActive(false);
+//     }
 
-    void Update()
-    {
-        if (!previewActive) return;
+//     void Update()
+//     {
+//         if (!previewActive) return;
 
-        // update the live MRUK room reference (if available)
-        cachedRoom = MRUK.Instance?.GetCurrentRoom();
+//         // update the live MRUK room reference (if available)
+//         cachedRoom = MRUK.Instance?.GetCurrentRoom();
 
-        // update preview position each frame
-        UpdatePreview();
+//         // update preview position each frame
+//         UpdatePreview();
 
-        // place on trigger press
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
-        {
-            TryPlace();
-        }
-    }
+//         // place on trigger press
+//         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+//         {
+//             TryPlace();
+//         }
+//     }
 
-    void UpdatePreview()
-    {
-        if (previewInstance == null || rightHandAnchor == null) return;
+//     void UpdatePreview()
+//     {
+//         if (previewInstance == null || rightHandAnchor == null) return;
 
-        // Ray from controller forward
-        Vector3 origin = rightHandAnchor.position;
-        Vector3 forward = rightHandAnchor.forward;
-        Ray ray = new Ray(origin, forward);
+//         // Ray from controller forward
+//         Vector3 origin = rightHandAnchor.position;
+//         Vector3 forward = rightHandAnchor.forward;
+//         Ray ray = new Ray(origin, forward);
 
-        bool hit = false;
-        RaycastHit hitInfo = default;
+//         bool hit = false;
+//         RaycastHit hitInfo = default;
 
-        // prefer MRUK room raycast (semantic)
-        if (cachedRoom != null)
-        {
-            LabelFilter filter = (currentType == PlacementType.Bin)
-                ? new LabelFilter(MRUKAnchor.SceneLabels.FLOOR)
-                : new LabelFilter(MRUKAnchor.SceneLabels.FLOOR | MRUKAnchor.SceneLabels.WALL_FACE | MRUKAnchor.SceneLabels.OTHER);
+//         // prefer MRUK room raycast (semantic)
+//         if (cachedRoom != null)
+//         {
+//             LabelFilter filter = (currentType == PlacementType.Bin)
+//                 ? new LabelFilter(MRUKAnchor.SceneLabels.FLOOR)
+//                 : new LabelFilter(MRUKAnchor.SceneLabels.FLOOR | MRUKAnchor.SceneLabels.WALL_FACE | MRUKAnchor.SceneLabels.OTHER);
 
-            MRUKAnchor mrukAnchor;
-            hit = cachedRoom.Raycast(ray, raycastDistance, filter, out hitInfo, out mrukAnchor);
-        }
+//             MRUKAnchor mrukAnchor;
+//             hit = cachedRoom.Raycast(ray, raycastDistance, filter, out hitInfo, out mrukAnchor);
+//         }
 
-        // fallback to physics raycast (project to floor)
-        if (!hit)
-        {
-            // cast a ray down from a point in front of controller to find floor
-            Vector3 forwardPoint = origin + forward * 0.6f;
-            if (Physics.Raycast(forwardPoint + Vector3.up * 1.0f, Vector3.down, out RaycastHit downHit, 5.0f))
-            {
-                hit = true;
-                hitInfo = downHit;
-            }
-        }
+//         // fallback to physics raycast (project to floor)
+//         if (!hit)
+//         {
+//             // cast a ray down from a point in front of controller to find floor
+//             Vector3 forwardPoint = origin + forward * 0.6f;
+//             if (Physics.Raycast(forwardPoint + Vector3.up * 1.0f, Vector3.down, out RaycastHit downHit, 5.0f))
+//             {
+//                 hit = true;
+//                 hitInfo = downHit;
+//             }
+//         }
 
-        Vector3 candidatePos;
-        Quaternion candidateRot = Quaternion.identity;
-        bool valid = false;
+//         Vector3 candidatePos;
+//         Quaternion candidateRot = Quaternion.identity;
+//         bool valid = false;
 
-        if (hit)
-        {
-            // place slightly above the floor (keep preview visible)
-            candidatePos = hitInfo.point;
-            if (currentType == PlacementType.Bin)
-                candidatePos.y += 0.10f; // small offset for bin preview
+//         if (hit)
+//         {
+//             // place slightly above the floor (keep preview visible)
+//             candidatePos = hitInfo.point;
+//             if (currentType == PlacementType.Bin)
+//                 candidatePos.y += 0.10f; // small offset for bin preview
 
-            // make preview face the camera horizontally
-            if (cam != null)
-            {
-                Vector3 toCam = cam.position - candidatePos;
-                toCam.y = 0;
-                if (toCam.sqrMagnitude > 0.001f) candidateRot = Quaternion.LookRotation(toCam);
-            }
-            else candidateRot = Quaternion.identity;
+//             // make preview face the camera horizontally
+//             if (cam != null)
+//             {
+//                 Vector3 toCam = cam.position - candidatePos;
+//                 toCam.y = 0;
+//                 if (toCam.sqrMagnitude > 0.001f) candidateRot = Quaternion.LookRotation(toCam);
+//             }
+//             else candidateRot = Quaternion.identity;
 
-            // validity rules
-            valid = (currentType == PlacementType.Bin) ? true : IsValidFanPosition(candidatePos);
-        }
-        else
-        {
-            // no valid hit -> hide preview
-            previewInstance.SetActive(false);
-            return;
-        }
+//             // validity rules
+//             valid = (currentType == PlacementType.Bin) ? true : IsValidFanPosition(candidatePos);
+//         }
+//         else
+//         {
+//             // no valid hit -> hide preview
+//             previewInstance.SetActive(false);
+//             return;
+//         }
 
-        // update preview
-        previewInstance.transform.position = candidatePos;
-        previewInstance.transform.rotation = candidateRot;
-        previewInstance.SetActive(true);
-        SetPreviewColor(valid ? Color.green : Color.red);
-    }
+//         // update preview
+//         previewInstance.transform.position = candidatePos;
+//         previewInstance.transform.rotation = candidateRot;
+//         previewInstance.SetActive(true);
+//         SetPreviewColor(valid ? Color.green : Color.red);
+//     }
 
-    bool IsValidFanPosition(Vector3 candidate)
-    {
-        if (placedBin == null) return false;
-        if (cam == null) return false;
+//     bool IsValidFanPosition(Vector3 candidate)
+//     {
+//         if (placedBin == null) return false;
+//         if (cam == null) return false;
 
-        Vector3 camPos = cam.position;
-        Vector3 binPos = placedBin.transform.position;
+//         Vector3 camPos = cam.position;
+//         Vector3 binPos = placedBin.transform.position;
 
-        Vector3 axis = (binPos - camPos);
-        float axisLen = axis.magnitude;
-        if (axisLen < 0.05f) return false;
-        Vector3 axisDir = axis / axisLen;
+//         Vector3 axis = (binPos - camPos);
+//         float axisLen = axis.magnitude;
+//         if (axisLen < 0.05f) return false;
+//         Vector3 axisDir = axis / axisLen;
 
-        // projection (t) of candidate onto camera->bin axis in normalized 0..1 along the segment
-        float t = Vector3.Dot(candidate - camPos, axisDir) / axisLen;
+//         // projection (t) of candidate onto camera->bin axis in normalized 0..1 along the segment
+//         float t = Vector3.Dot(candidate - camPos, axisDir) / axisLen;
 
-        if (t < minBetweenT || t > maxBetweenT) return false;
+//         if (t < minBetweenT || t > maxBetweenT) return false;
 
-        // perpendicular distance from axis line
-        Vector3 projPoint = camPos + axisDir * (t * axisLen);
-        float perpDist = Vector3.Distance(candidate, projPoint);
+//         // perpendicular distance from axis line
+//         Vector3 projPoint = camPos + axisDir * (t * axisLen);
+//         float perpDist = Vector3.Distance(candidate, projPoint);
 
-        // allowable perpendicular distance scales with axis length (so close setups are stricter)
-        float maxPerp = Mathf.Lerp(0.3f, 1.5f, Mathf.Clamp01(axisLen / 5f));
-        if (perpDist > maxPerp * fanAxisTolerance) return false;
+//         // allowable perpendicular distance scales with axis length (so close setups are stricter)
+//         float maxPerp = Mathf.Lerp(0.3f, 1.5f, Mathf.Clamp01(axisLen / 5f));
+//         if (perpDist > maxPerp * fanAxisTolerance) return false;
 
-        // angle relative to camera forward
-        float angle = Vector3.Angle(cam.forward, (candidate - camPos));
-        if (angle > fanMaxAngleDeg) return false;
+//         // angle relative to camera forward
+//         float angle = Vector3.Angle(cam.forward, (candidate - camPos));
+//         if (angle > fanMaxAngleDeg) return false;
 
-        // ensure candidate is in front of camera
-        if (Vector3.Dot(cam.forward, (candidate - camPos)) < 0f) return false;
+//         // ensure candidate is in front of camera
+//         if (Vector3.Dot(cam.forward, (candidate - camPos)) < 0f) return false;
 
-        return true;
-    }
+//         return true;
+//     }
 
-    void TryPlace()
-{
-    if (previewInstance == null || !previewInstance.activeInHierarchy)
-    {
-        Debug.Log("[Placer] Cannot place - preview inactive.");
-        return;
-    }
+//     void TryPlace()
+// {
+//     if (previewInstance == null || !previewInstance.activeInHierarchy)
+//     {
+//         Debug.Log("[Placer] Cannot place - preview inactive.");
+//         return;
+//     }
 
-    Vector3 placePos = previewInstance.transform.position;
-    Quaternion placeRot = previewInstance.transform.rotation;
+//     Vector3 placePos = previewInstance.transform.position;
+//     Quaternion placeRot = previewInstance.transform.rotation;
 
-    bool allow = (currentType == PlacementType.Bin) 
-        ? true 
-        : IsValidFanPosition(placePos);
+//     bool allow = (currentType == PlacementType.Bin) 
+//         ? true 
+//         : IsValidFanPosition(placePos);
 
-    if (!allow)
-    {
-        if (invalidPlaceSfx)
-            AudioSource.PlayClipAtPoint(invalidPlaceSfx, Camera.main.transform.position);
-        Debug.Log("[Placer] Placement rejected by validation.");
-        return;
-    }
+//     if (!allow)
+//     {
+//         if (invalidPlaceSfx)
+//             AudioSource.PlayClipAtPoint(invalidPlaceSfx, Camera.main.transform.position);
+//         Debug.Log("[Placer] Placement rejected by validation.");
+//         return;
+//     }
 
-    GameObject prefab = (currentType == PlacementType.Bin) 
-        ? binPrefab 
-        : fanPrefab;
+//     GameObject prefab = (currentType == PlacementType.Bin) 
+//         ? binPrefab 
+//         : fanPrefab;
 
-    if (prefab == null)
-    {
-        Debug.LogWarning("[Placer] Missing prefab for " + currentType);
-        return;
-    }
+//     if (prefab == null)
+//     {
+//         Debug.LogWarning("[Placer] Missing prefab for " + currentType);
+//         return;
+//     }
 
-    GameObject go = Instantiate(prefab, placePos, placeRot);
-    go.transform.parent = null;
+//     GameObject go = Instantiate(prefab, placePos, placeRot);
+//     go.transform.parent = null;
 
-    var rb = go.GetComponent<Rigidbody>();
-    if (rb != null)
-    {
-        rb.isKinematic = true;
-        rb.useGravity = false;
-    }
+//     var rb = go.GetComponent<Rigidbody>();
+//     if (rb != null)
+//     {
+//         rb.isKinematic = true;
+//         rb.useGravity = false;
+//     }
 
-    var grab = go.GetComponent<OVRGrabbable>();
-    if (grab != null) Destroy(grab);
+//     var grab = go.GetComponent<OVRGrabbable>();
+//     if (grab != null) Destroy(grab);
 
-    if (go.GetComponent<OVRSpatialAnchor>() == null)
-        go.AddComponent<OVRSpatialAnchor>();
+//     if (go.GetComponent<OVRSpatialAnchor>() == null)
+//         go.AddComponent<OVRSpatialAnchor>();
 
-    if (currentType == PlacementType.Bin) placedBin = go;
-    if (currentType == PlacementType.Fan) placedFan = go;
+//     if (currentType == PlacementType.Bin) placedBin = go;
+//     if (currentType == PlacementType.Fan) placedFan = go;
 
-    if (interactionManager != null)
-        interactionManager.NotifyPlaced(currentType);
+//     if (interactionManager != null)
+//         interactionManager.NotifyPlaced(currentType);
 
-    if (placedSfx)
-        AudioSource.PlayClipAtPoint(placedSfx, placePos);
+//     if (placedSfx)
+//         AudioSource.PlayClipAtPoint(placedSfx, placePos);
 
-    previewActive = false;
-    previewInstance.SetActive(false);
+//     previewActive = false;
+//     previewInstance.SetActive(false);
 
-    Debug.Log("[Placer] " + currentType + " placed at " + placePos);
-}
+//     Debug.Log("[Placer] " + currentType + " placed at " + placePos);
+// }
 
-    void SetPreviewColor(Color c)
-    {
-        if (previewInstance == null) return;
-        var rends = previewInstance.GetComponentsInChildren<Renderer>();
-        foreach (var r in rends)
-        {
-            // assume preview materials support color setting
-            if (r.material != null) r.material.color = c;
-        }
-    }
-}
+//     void SetPreviewColor(Color c)
+//     {
+//         if (previewInstance == null) return;
+//         var rends = previewInstance.GetComponentsInChildren<Renderer>();
+//         foreach (var r in rends)
+//         {
+//             // assume preview materials support color setting
+//             if (r.material != null) r.material.color = c;
+//         }
+//     }
+// }

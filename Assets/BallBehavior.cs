@@ -6,22 +6,35 @@ public class BallBehavior : MonoBehaviour
     public AudioClip scoreSfx;
     public GameObject scoreParticlePrefab;
 
+    [Tooltip("Minimum upward normal required to count as top hit")]
+    public float minTopNormalY = 0.7f;
+
     void OnCollisionEnter(Collision col)
     {
-        if (col.collider.CompareTag("Bin"))
-        {
-            ScoreUI.Instance.AddScore(points);
+        if (!col.collider.CompareTag("Bin")) return;
 
-            if (scoreSfx) AudioSource.PlayClipAtPoint(scoreSfx, transform.position);
-            if (scoreParticlePrefab) Instantiate(scoreParticlePrefab, transform.position, Quaternion.identity);
-
-            // destroy ball
-            Destroy(gameObject);
-        }
-        else
+        foreach (var contact in col.contacts)
         {
-            // optional: destroy after timeout to avoid garbage
-            Destroy(gameObject, 8f);
+            // Only count if hit from above (top surface)
+            if (contact.normal.y >= minTopNormalY)
+            {
+                if (ScoreUI.Instance != null)
+                {
+                    ScoreUI.Instance.AddScore(points);
+                }
+
+                if (scoreSfx)
+                    AudioSource.PlayClipAtPoint(scoreSfx, contact.point);
+
+                if (scoreParticlePrefab)
+                    Instantiate(scoreParticlePrefab, contact.point, Quaternion.identity);
+
+                Destroy(gameObject);
+                return;
+            }
         }
+
+        // Side hit — do nothing or destroy later
+        Destroy(gameObject, 8f);
     }
 }
