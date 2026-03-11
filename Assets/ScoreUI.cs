@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using TMPro;   // IMPORTANT
 
@@ -10,19 +11,48 @@ public class ScoreUI : MonoBehaviour
 
     public int score = 0;
 
+    [Header("Assign TMP Popup Text")]
+    public TMP_Text popupText;
+    public float popupDuration = 1.2f;
+
+    private Coroutine popupRoutine;
+
     void Awake()
     {
         if (Instance != null && Instance != this)
+        {
             Destroy(this);
+            return;
+        }
 
         Instance = this;
         UpdateUI();
+
+        if (popupText != null)
+            popupText.gameObject.SetActive(false);
     }
 
     public void AddScore(int points)
     {
         score += points;
         UpdateUI();
+    }
+
+    public void ShowPopup(string message)
+    {
+        if (popupText == null) return;
+
+        if (popupRoutine != null) StopCoroutine(popupRoutine);
+        popupRoutine = StartCoroutine(PopupCoroutine(message));
+    }
+
+    private IEnumerator PopupCoroutine(string message)
+    {
+        popupText.text = message;
+        popupText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(popupDuration);
+        popupText.gameObject.SetActive(false);
+        popupRoutine = null;
     }
 
     void UpdateUI()

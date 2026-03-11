@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mihik" at "2026-03-10T23:37:29.700897Z"
 Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mihik" at "2026-03-10T23:37:25.578415Z"
 OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16068 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-03-10T23:37:25Z
+Date: 2026-03-10T23:37:29Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
@@ -13,11 +13,11 @@ C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker3
 -projectPath
 C:/Users/mihik/Documents/GitHub/PaperToss_MetaQuestGame
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker3.log
 -srvPort
 57215
 -licensingIpc
@@ -67,12 +67,12 @@ C:/Users/mihik/Documents/GitHub/PaperToss_MetaQuestGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [17852]  Target information:
+Player connection [8876]  Target information:
 
-Player connection [17852]  * "[IP] 10.23.222.87 [Port] 0 [Flags] 2 [Guid] 2236958942 [EditorId] 2236958942 [Version] 1048832 [Id] WindowsEditor(7,MIHIKAsDELL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8876]  * "[IP] 10.23.222.87 [Port] 0 [Flags] 2 [Guid] 1836268442 [EditorId] 1836268442 [Version] 1048832 [Id] WindowsEditor(7,MIHIKAsDELL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [17852] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [17852] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8876] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8876] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,9 +84,9 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 533.82 ms, found 16 plugins.
+Refreshing native plugins compatible for Editor in 734.91 ms, found 16 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 2 native plugins for Editor in 7.41 ms.
+Preloading 2 native plugins for Editor in 10.44 ms.
 Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/mihik/Documents/GitHub/PaperToss_MetaQuestGame/Assets
@@ -103,21 +103,21 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              a633a8013bae4c26a55d14edf794c563
+  Session Id:              a295ebdf5bcd49a7985914754297a400
   Correlation Id:          c5b39fa36c4f2e6acb4f512e584ca230
-  External correlation Id: 6854021491640806062
+  External correlation Id: 8248797120023259298
   Machine Id:              odx669c7IQog9uugjKOOpqfbGkQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mihik" (connect: 0.00s, validation: 0.02s, handshake: 68.52s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mihik-notifications" at "2026-03-10T23:38:34.1137918Z"
-[Licensing::Module] Licensing Background thread has ended after 68.54s
-[Licensing::Module] Licensing is initialized (took 36.68s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mihik" (connect: 0.12s, validation: 0.02s, handshake: 73.26s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mihik-notifications" at "2026-03-10T23:38:43.1055834Z"
+[Licensing::Module] Licensing Background thread has ended after 73.42s
+[Licensing::Module] Licensing is initialized (took 14.62s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 20067516350472-mihika135-UnityProStuXXXX
@@ -125,44 +125,44 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/E
   Type: Assigned
   Expiration: 2026-09-08T20:05:39Z
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 37.825775 seconds.
-- Loaded All Assemblies, in 58.511 seconds
+Registered in 14.646945 seconds.
+- Loaded All Assemblies, in 27.281 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 23277 ms
+Android Extension - Scanning For ADB Devices 20883 ms
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 44.837 seconds
-Domain Reload Profiling: 103316ms
-	BeginReloadAssembly (3288ms)
+- Finished resetting the current domain, in 40.745 seconds
+Domain Reload Profiling: 68010ms
+	BeginReloadAssembly (7032ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (3714ms)
-	RebuildNativeTypeToScriptingClass (442ms)
-	initialDomainReloadingComplete (46571ms)
-	LoadAllAssembliesAndSetupDomain (4464ms)
-		LoadAssemblies (3165ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (791ms)
+	RebuildNativeTypeToScriptingClass (126ms)
+	initialDomainReloadingComplete (16143ms)
+	LoadAllAssembliesAndSetupDomain (3169ms)
+		LoadAssemblies (6920ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (4424ms)
-			TypeCache.Refresh (4400ms)
-				TypeCache.ScanAssembly (3403ms)
+		AnalyzeDomain (3147ms)
+			TypeCache.Refresh (3127ms)
+				TypeCache.ScanAssembly (2933ms)
 			BuildScriptInfoCaches (1ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (44838ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (40749ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (43126ms)
+		SetupLoadedEditorAssemblies (39552ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26380ms)
-			SetLoadedEditorAssemblies (497ms)
-			BeforeProcessingInitializeOnLoad (7055ms)
-			ProcessInitializeOnLoadAttributes (5622ms)
-			ProcessInitializeOnLoadMethodAttributes (3528ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (43ms)
+			InitializePlatformSupportModulesInManaged (30784ms)
+			SetLoadedEditorAssemblies (72ms)
+			BeforeProcessingInitializeOnLoad (2626ms)
+			ProcessInitializeOnLoadAttributes (4106ms)
+			ProcessInitializeOnLoadMethodAttributes (1962ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -171,16 +171,16 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in 25.891 seconds
+- Loaded All Assemblies, in 25.987 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 466.59 ms, found 16 plugins.
+Refreshing native plugins compatible for Editor in 281.18 ms, found 16 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 243.36 ms, found 16 plugins.
+Refreshing native plugins compatible for Editor in 673.97 ms, found 16 plugins.
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -199,57 +199,56 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in 42.289 seconds
-Domain Reload Profiling: 68102ms
-	BeginReloadAssembly (3797ms)
+- Finished resetting the current domain, in 41.521 seconds
+Domain Reload Profiling: 67392ms
+	BeginReloadAssembly (2764ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (96ms)
+		DisableScriptedObjects (45ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (2ms)
-		CreateAndSetChildDomain (1167ms)
-	RebuildCommonClasses (530ms)
-	RebuildNativeTypeToScriptingClass (132ms)
-	initialDomainReloadingComplete (564ms)
-	LoadAllAssembliesAndSetupDomain (20787ms)
-		LoadAssemblies (10104ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (271ms)
+	RebuildCommonClasses (387ms)
+	RebuildNativeTypeToScriptingClass (445ms)
+	initialDomainReloadingComplete (2012ms)
+	LoadAllAssembliesAndSetupDomain (20261ms)
+		LoadAssemblies (8834ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12672ms)
-			TypeCache.Refresh (9266ms)
-				TypeCache.ScanAssembly (8824ms)
-			BuildScriptInfoCaches (3001ms)
-			ResolveRequiredComponents (331ms)
-	FinalizeReload (42293ms)
+		AnalyzeDomain (12915ms)
+			TypeCache.Refresh (9771ms)
+				TypeCache.ScanAssembly (9445ms)
+			BuildScriptInfoCaches (2831ms)
+			ResolveRequiredComponents (248ms)
+	FinalizeReload (41523ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (38960ms)
+		SetupLoadedEditorAssemblies (37471ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (111ms)
-			SetLoadedEditorAssemblies (57ms)
-			BeforeProcessingInitializeOnLoad (7339ms)
-			ProcessInitializeOnLoadAttributes (29772ms)
-			ProcessInitializeOnLoadMethodAttributes (1488ms)
-			AfterProcessingInitializeOnLoad (190ms)
+			InitializePlatformSupportModulesInManaged (154ms)
+			SetLoadedEditorAssemblies (91ms)
+			BeforeProcessingInitializeOnLoad (15156ms)
+			ProcessInitializeOnLoadAttributes (20252ms)
+			ProcessInitializeOnLoadMethodAttributes (1684ms)
+			AfterProcessingInitializeOnLoad (130ms)
 			EditorAssembliesLoaded (3ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (84ms)
+		AwakeInstancesAfterBackupRestoration (60ms)
 WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 221.07 ms, found 16 plugins.
-Preloading 2 native plugins for Editor in 1.48 ms.
-Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9969 unused Assets / (2.3 MB). Loaded Objects now: 10863.
-Memory consumption went from 183.7 MB to 181.4 MB.
-Total: 82.087800 ms (FindLiveObjects: 8.580300 ms CreateObjectMapping: 3.450100 ms MarkObjects: 60.804900 ms  DeleteObjects: 9.242800 ms)
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 179.88 ms, found 16 plugins.
+Preloading 2 native plugins for Editor in 1.32 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9970 unused Assets / (3.7 MB). Loaded Objects now: 10866.
+Memory consumption went from 181.2 MB to 177.5 MB.
+Total: 58.162300 ms (FindLiveObjects: 5.861900 ms CreateObjectMapping: 1.857500 ms MarkObjects: 40.027800 ms  DeleteObjects: 10.405600 ms)
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

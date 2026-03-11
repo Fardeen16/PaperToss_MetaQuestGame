@@ -1557,6 +1557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::rightHandTrigger
   grabButton: 67108864
+  popupMessage: Secondary trigger used
 --- !u!1 &1000919834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +1889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreUI
   scoreText: {fileID: 1970009700}
   score: 0
+  popupText: {fileID: 1115163081}
+  popupDuration: 1.2
 --- !u!1 &1134955699
 GameObject:
   m_ObjectHideFlags: 0
